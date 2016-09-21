@@ -8,7 +8,9 @@ Requirements:
 - Deploy with kubernates.
 
 Plugins:
-  - Git
-  - Docker
-  - Kubernates
-
+  - github-oauth
+  - github-branch-source    
+  - workflow-aggregator
+  - docker-workflow   
+  - google-container-registry-auth  
+  - kubernetes

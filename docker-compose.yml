@@ -1,9 +1,10 @@
 version: '2'
 services:
   app:
-    image: jenkins:2.7.3
-    working_dir: /var/jenkins_home/
+    build: .
     ports:
       - 8080:8080
     volumes:
       - ./jenkins_home:/var/jenkins_home/
+    environment:
+      JAVA_OPTS: "-Djenkins.install.runSetupWizard=false"
